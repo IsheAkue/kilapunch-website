@@ -2,6 +2,18 @@ import { notFound } from "next/navigation"
 import { products } from "@/data/products"
 import ProductDetailContent from "./ProductDetailContent"
 
+// Add this exported function to app/products/[slug]/page.js
+
+export async function generateStaticParams() {
+  return [
+    { slug: 'sage-200-evolution' },
+    { slug: 'sage-intacct' },
+    { slug: 'sage-payroll' },
+    { slug: 'sage-50-pastel' },
+    { slug: 'palladium-accounting' },
+  ];
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const product = products.find((item) => item.slug === slug)
