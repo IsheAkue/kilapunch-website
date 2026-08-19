@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import { services } from "@/data/services"
 import ServiceDetailContent from "./ServiceDetailContent"
+import { pageMetadata } from "@/lib/seo"
 
 export async function generateStaticParams() {
   return services.map((service) => ({
@@ -14,10 +15,10 @@ export async function generateMetadata({ params }) {
 
   if (!service) return {}
 
-  return {
+  return pageMetadata({
     title: service.title,
     description: service.shortDescription,
-  }
+  })
 }
 
 export default async function ServicePage({ params }) {

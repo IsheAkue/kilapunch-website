@@ -13,6 +13,7 @@ import {
 } from "lucide-react"
 import ContactForm from "@/components/ContactForm"
 import { services } from "@/data/services"
+import { HeroGlow, CTAGlow } from "@/components/SectionGlow"
 
 const phoneNumbers = ["+263 774 708 347", "+263 786 049 770", "+27 710 367 057"]
 
@@ -48,15 +49,7 @@ export default function ContactContent() {
     <main className="min-h-screen bg-white">
       {/* ============================= HERO ============================= */}
       <section className="relative overflow-hidden bg-brand-navy py-20 sm:py-28">
-        <div className="pointer-events-none absolute -left-24 top-0 h-[400px] w-[400px] rounded-full bg-blue-700/25 blur-[120px]" />
-        <div className="pointer-events-none absolute -right-24 bottom-0 h-[350px] w-[350px] rounded-full bg-orange-600/20 blur-[120px]" />
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-            backgroundSize: "28px 28px",
-          }}
-        />
+        <HeroGlow />
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -322,14 +315,7 @@ export default function ContactContent() {
 
       {/* ============================= CTA ============================= */}
       <section className="relative overflow-hidden bg-brand-navy py-20 text-center text-white lg:py-24">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-blue-700/20 blur-[120px]" />
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-            backgroundSize: "28px 28px",
-          }}
-        />
+        <CTAGlow />
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}

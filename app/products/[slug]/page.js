@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import { products } from "@/data/products"
 import ProductDetailContent from "./ProductDetailContent"
+import { pageMetadata } from "@/lib/seo"
 
 export async function generateStaticParams() {
   return products.map((product) => ({
@@ -14,10 +15,10 @@ export async function generateMetadata({ params }) {
 
   if (!product) return {}
 
-  return {
+  return pageMetadata({
     title: product.name,
     description: product.shortDescription,
-  }
+  })
 }
 
 export default async function ProductPage({ params }) {
