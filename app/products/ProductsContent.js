@@ -185,7 +185,7 @@ export default function ProductsContent() {
                     href={`/products/${product.slug}`}
                     className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 transition group-hover:gap-3 hover:text-blue-800"
                   >
-                    Learn More
+                    Learn More<span className="sr-only"> about {product.name}</span>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </motion.div>

@@ -265,7 +265,7 @@ function ProductShowcase({ product }) {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-400">
             {product.category}
           </p>
-          <h3 className="mt-2 text-2xl font-bold text-white">{product.name}</h3>
+          <p className="mt-2 text-2xl font-bold text-white">{product.name}</p>
 
           <div className="mt-6 flex items-stretch gap-4">
             <ul className="flex-1 space-y-3">
@@ -296,7 +296,7 @@ function ProductShowcase({ product }) {
             className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white"
           >
             <span className="border-b border-orange-400 pb-0.5 transition-colors group-hover:border-white">
-              Learn More
+              Learn More<span className="sr-only"> about {product.name}</span>
             </span>
             <ArrowRight className="h-4 w-4 text-orange-400 transition-transform group-hover:translate-x-1" />
           </Link>
