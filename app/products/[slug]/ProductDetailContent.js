@@ -31,6 +31,7 @@ import {
   Package,
 } from "lucide-react"
 import { HeroGlow, CTAGlow } from "@/components/SectionGlow"
+import { revealUp } from "@/lib/motion"
 
 // Per-product icon — kept as a fallback for anything that doesn't have a
 // logo yet, and still used inside the feature-showcase ring.
@@ -289,10 +290,10 @@ export default function ProductDetailContent({ product, relatedProducts }) {
         <CTAGlow />
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-2xl px-6"
         >
           <h2 className="text-3xl font-bold sm:text-4xl">
@@ -342,10 +343,11 @@ export default function ProductDetailContent({ product, relatedProducts }) {
                 return (
                   <motion.div
                     key={related.slug}
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    variants={revealUp}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    custom={index}
                   >
                     <Link
                       href={`/products/${related.slug}`}

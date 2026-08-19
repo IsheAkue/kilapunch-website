@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { revealUp } from "@/lib/motion"
 import SectionHeading from "@/components/SectionHeading"
 import {
   ShoppingBag,
@@ -81,10 +82,11 @@ export default function IndustriesSection() {
           {industries.map((industry, index) => (
             <motion.div
               key={industry.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={revealUp}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              custom={index}
               className="group min-w-0 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Image with gradient overlay + title anchored on the photo */}

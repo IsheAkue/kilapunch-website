@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { revealUp } from "@/lib/motion"
 
 const steps = [
   {
@@ -79,10 +80,11 @@ export default function ProcessSection() {
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={revealUp}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                custom={index}
                 className="relative flex h-full min-w-0 flex-col items-center"
               >
                 {/* Number Circle */}

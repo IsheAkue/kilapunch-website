@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { revealUp } from "@/lib/motion"
 
 const metrics = [
   {
@@ -33,10 +34,10 @@ export default function MetricsSection() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="grid grid-cols-1 divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4"
         >
           {metrics.map((metric, index) => (

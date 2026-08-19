@@ -18,6 +18,7 @@ import {
 import { products } from "@/data/products"
 import { services } from "@/data/services"
 import { HeroGlow, CTAGlow } from "@/components/SectionGlow"
+import { revealUp } from "@/lib/motion"
 
 const industries = [
   {
@@ -284,10 +285,10 @@ export default function IndustriesClient() {
         <CTAGlow />
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-2xl px-6"
         >
           <h2 className="text-3xl font-bold sm:text-4xl">

@@ -14,6 +14,7 @@ import {
 import ContactForm from "@/components/ContactForm"
 import { services } from "@/data/services"
 import { HeroGlow, CTAGlow } from "@/components/SectionGlow"
+import { revealUp } from "@/lib/motion"
 
 const phoneNumbers = ["+263 774 708 347", "+263 786 049 770", "+27 710 367 057"]
 
@@ -310,10 +311,10 @@ export default function ContactContent() {
         <CTAGlow />
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-2xl px-6"
         >
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white/[0.06] text-orange-400">

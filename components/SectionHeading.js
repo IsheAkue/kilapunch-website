@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { revealUp } from "@/lib/motion"
 
 export default function SectionHeading({
   title,
@@ -9,10 +10,10 @@ export default function SectionHeading({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      variants={revealUp}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
       className={`max-w-2xl ${centered ? "mx-auto text-center" : ""}`}
     >
       <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">

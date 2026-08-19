@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
+import { revealUp } from "@/lib/motion"
 import {
   ArrowRight,
   Target,
@@ -323,10 +324,10 @@ export default function AboutContent() {
 
         <div className="relative mx-auto max-w-7xl px-6">
           <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            variants={revealUp}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
             className="text-center text-3xl font-bold text-slate-900 sm:text-4xl"
           >
             How We Work

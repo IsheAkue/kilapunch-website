@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 import { services } from "@/data/services"
 import { HeroGlow, CTAGlow } from "@/components/SectionGlow"
+import { revealUp } from "@/lib/motion"
 
 // Maps each known service title to an icon. Falls back to a generic icon
 // for any future service added to the data file that isn't listed here,
@@ -224,10 +225,11 @@ export default function ServicesContent() {
             {whyKilapunch.map((item, index) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                variants={revealUp}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                custom={index}
                 className="min-w-0 rounded-3xl border border-slate-200 bg-white p-8 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 <div
@@ -256,10 +258,10 @@ export default function ServicesContent() {
         <CTAGlow />
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={revealUp}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-2xl px-6"
         >
           <h2 className="text-3xl font-bold sm:text-4xl">
