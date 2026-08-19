@@ -17,36 +17,42 @@ import {
 const services = [
   {
     title: "Sage Evolution Support",
+    slug: "sage-evolution-support",
     description:
       "Reliable ERP troubleshooting, maintenance, and operational support for growing businesses.",
     icon: ShieldCheck,
   },
   {
     title: "ERP Implementation",
+    slug: "erp-implementation",
     description:
       "Structured ERP deployment and business systems integration tailored to operational workflows.",
     icon: Database,
   },
   {
     title: "Business Automation",
+    slug: "business-automation",
     description:
       "Streamline repetitive operational processes through modern automation systems and tools.",
     icon: Workflow,
   },
   {
     title: "Remote IT Support",
+    slug: "remote-it-support",
     description:
       "Fast remote technical assistance to minimize downtime and keep operations running smoothly.",
     icon: MonitorSmartphone,
   },
   {
     title: "Accounting Systems",
+    slug: "accounting-systems",
     description:
       "Professional accounting software setup, optimization, and support for business continuity.",
     icon: Calculator,
   },
   {
     title: "Infrastructure Support",
+    slug: "infrastructure-support",
     description:
       "Business-focused network, workstation, and systems support for operational reliability.",
     icon: Network,
@@ -88,24 +94,28 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="group grid grid-cols-1 items-start gap-4 py-8 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-8 sm:py-10"
               >
-                <div
-                  className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors ${accent.chip}`}
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="group grid grid-cols-1 items-start gap-4 py-8 transition hover:bg-slate-50 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-8 sm:py-10"
                 >
-                  <service.icon className="h-6 w-6" />
-                </div>
+                  <div
+                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors ${accent.chip}`}
+                  >
+                    <service.icon className="h-6 w-6" />
+                  </div>
 
-                <div className="min-w-0">
-                  <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 leading-7 text-slate-600">
-                    {service.description}
-                  </p>
-                </div>
+                  <div className="min-w-0">
+                    <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2 leading-7 text-slate-600">
+                      {service.description}
+                    </p>
+                  </div>
 
-                <ArrowRight className="hidden h-5 w-5 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-slate-900 sm:block" />
+                  <ArrowRight className="hidden h-5 w-5 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-slate-900 sm:block" />
+                </Link>
               </motion.div>
             )
           })}
