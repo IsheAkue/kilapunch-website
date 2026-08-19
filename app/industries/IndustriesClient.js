@@ -160,11 +160,7 @@ export default function IndustriesClient() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto max-w-4xl px-6 text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-            Sectors & Industries
-          </p>
-
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Business Systems Built Around Your Industry
           </h1>
 

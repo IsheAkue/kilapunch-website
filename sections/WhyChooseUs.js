@@ -87,11 +87,7 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="flex min-w-0 flex-col justify-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-            Why Kilapunch
-          </p>
-
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Built Around Reliability, Support & Operational Continuity
           </h2>
 

@@ -83,11 +83,7 @@ export default function ServicesContent() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto max-w-4xl px-6 text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-            Our Services
-          </p>
-
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             We Solve The ERP & Accounting Problems Slowing Your Business Down
           </h1>
 
@@ -116,16 +112,6 @@ export default function ServicesContent() {
       {/* ===================== "SOUND FAMILIAR?" — PROBLEM FIRST ===================== */}
       <section className="relative overflow-hidden py-16 sm:py-20">
         <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500"
-          >
-            Do Any Of These Sound Familiar?
-          </motion.p>
-
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -224,16 +210,6 @@ export default function ServicesContent() {
       {/* ============================= WHY KILAPUNCH ============================= */}
       <section className="relative overflow-hidden py-20 lg:py-24">
         <div className="relative mx-auto max-w-6xl px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500"
-          >
-            Why Kilapunch
-          </motion.p>
-
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

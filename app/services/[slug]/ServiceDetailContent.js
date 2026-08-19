@@ -110,11 +110,7 @@ export default function ServiceDetailContent({ service, relatedServices }) {
             transition={{ duration: 0.5 }}
             className="min-w-0"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-              Common Challenges
-            </p>
-
-            <h2 className="mt-4 text-3xl font-bold text-slate-900">
+            <h2 className="text-3xl font-bold text-slate-900">
               Problems We Help Solve
             </h2>
 
@@ -142,11 +138,7 @@ export default function ServiceDetailContent({ service, relatedServices }) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="min-w-0"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-              Our Approach
-            </p>
-
-            <h2 className="mt-4 text-3xl font-bold text-slate-900">
+            <h2 className="text-3xl font-bold text-slate-900">
               How Kilapunch Helps
             </h2>
 
@@ -175,16 +167,6 @@ export default function ServiceDetailContent({ service, relatedServices }) {
           <div className="pointer-events-none absolute -right-24 top-0 h-[340px] w-[340px] rounded-full bg-green-100/40 blur-3xl" />
 
           <div className="relative mx-auto max-w-6xl px-6">
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-sm font-semibold uppercase tracking-[0.2em] text-green-600"
-            >
-              Business Outcomes
-            </motion.p>
-
             <motion.h2
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -225,11 +207,7 @@ export default function ServiceDetailContent({ service, relatedServices }) {
           transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-2xl px-6"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
-            Need Assistance?
-          </p>
-
-          <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
+          <h2 className="text-3xl font-bold sm:text-4xl">
             Let&apos;s Discuss Your Requirements
           </h2>
 
@@ -264,11 +242,7 @@ export default function ServiceDetailContent({ service, relatedServices }) {
       {relatedServices.length > 0 && (
         <section className="border-t border-slate-200 py-20 lg:py-28">
           <div className="mx-auto max-w-6xl px-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-              Continue Exploring
-            </p>
-
-            <h2 className="mt-4 text-3xl font-bold text-slate-900">
+            <h2 className="text-3xl font-bold text-slate-900">
               Related Business Solutions
             </h2>
 

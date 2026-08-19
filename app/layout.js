@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Public_Sans } from "next/font/google";
 import "./globals.css";
 
 import { MotionConfig } from "framer-motion";
@@ -32,15 +32,21 @@ const organizationJsonLd = {
 };
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Display face for headings — geometric, technical, distinct from the
+// Vercel-ecosystem-default Geist this replaced.
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
 });
 
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Body face — Public Sans, designed for US federal digital services;
+// carries a dependable, institutional undertone that fits an enterprise
+// ERP consultancy without reading as a startup landing page.
+const publicSans = Public_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 
@@ -124,7 +130,7 @@ return (
 
 <html
 lang="en"
-className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+className={`${spaceGrotesk.variable} ${publicSans.variable} h-full antialiased`}
 >
 
 <body className="min-h-full flex flex-col">

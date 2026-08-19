@@ -73,7 +73,6 @@ export default function IndustriesSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           centered
-          label="Industries"
           title="Organizations We Support"
           description="From retailers and manufacturers to educational institutions, agricultural businesses, and professional service firms, Kilapunch helps organizations implement and optimize business systems that improve efficiency and visibility."
         />

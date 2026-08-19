@@ -351,9 +351,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7 }}
             className="min-w-0"
           >
-            <p className="max-w-full break-words text-xs font-semibold uppercase tracking-[0.15em] text-orange-400 sm:text-sm sm:tracking-[0.25em]">
+            <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-medium text-slate-300 backdrop-blur-sm sm:text-sm">
               Sage &amp; Palladium Business Partner — Zimbabwe
-            </p>
+            </span>
 
             {/* Headline + description crossfade with the active product */}
             <AnimatePresence mode="wait">

@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 
   /* Brand — the dark navy used across every hero/CTA section, and the
      blue->orange gradient used on every primary call-to-action. Named here
@@ -28,7 +28,7 @@
 
 body {
   color: #0f172a;
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 
   background:
@@ -50,6 +50,12 @@ body {
 
 section {
   position: relative;
+}
+
+/* Headings sitewide use the display face — one rule instead of a
+   font-display class on every h1-h4 across ~20 files. */
+h1, h2, h3, h4 {
+  font-family: var(--font-display), var(--font-body), Arial, sans-serif;
 }
 
 p {

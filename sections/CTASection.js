@@ -34,11 +34,7 @@ export default function CTASection() {
         transition={{ duration: 0.6 }}
         className="relative z-10 mx-auto max-w-4xl px-6 text-center lg:px-8"
       >
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-          Let&apos;s Talk Business Systems
-        </p>
-
-        <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
           Your Trusted Partner For Sage ERP Solutions
         </h2>
 

@@ -126,11 +126,7 @@ export default function AboutContent() {
             transition={{ duration: 0.7 }}
             className="min-w-0"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-              About Kilapunch
-            </p>
-
-            <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
               Empowering Businesses Through Smarter Systems
             </h1>
 
@@ -186,12 +182,9 @@ export default function AboutContent() {
           >
             <div className="absolute -left-4 -top-4 -z-10 h-full w-full rounded-[2rem] bg-gradient-to-br from-blue-100 to-orange-100" />
             <div className="flex h-full flex-col justify-center rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl sm:p-10 lg:p-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-                Platforms We Support
-              </p>
-
-              <p className="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
-                Five ERP and accounting platforms, matched to what each
+              <p className="text-base leading-8 text-slate-600 sm:text-lg">
+                <span className="font-semibold text-slate-900">Platforms we support: </span>
+                five ERP and accounting platforms, matched to what each
                 business actually needs — not a one-size-fits-all sale.
               </p>
 
@@ -218,11 +211,7 @@ export default function AboutContent() {
 
           {/* Timeline */}
           <div className="min-w-0">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-              Our Story
-            </p>
-
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
               A Trusted ERP & Business Technology Partner Since 2006
             </h2>
 
@@ -292,13 +281,12 @@ export default function AboutContent() {
             transition={{ duration: 0.6 }}
             className="min-w-0 py-10 lg:py-4 lg:pr-14"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.06] text-blue-400">
-              <Target className="h-5 w-5" />
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-blue-400">
+                <Target className="h-5 w-5" />
+              </div>
+              <h3 className="text-lg font-semibold text-white">Mission</h3>
             </div>
-
-            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
-              Our Mission
-            </p>
 
             <p className="mt-4 text-2xl font-semibold leading-snug text-white sm:text-3xl">
               To help organizations operate better through reliable ERP,
@@ -314,13 +302,12 @@ export default function AboutContent() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="min-w-0 py-10 lg:py-4 lg:pl-14"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.06] text-orange-400">
-              <Eye className="h-5 w-5" />
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-orange-400">
+                <Eye className="h-5 w-5" />
+              </div>
+              <h3 className="text-lg font-semibold text-white">Vision</h3>
             </div>
-
-            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
-              Our Vision
-            </p>
 
             <p className="mt-4 text-2xl font-semibold leading-snug text-white sm:text-3xl">
               To become Zimbabwe&apos;s trusted technology partner for

@@ -53,18 +53,12 @@ const services = [
   },
 ]
 
-// Icon chips alternate blue/orange across the grid — same two brand colors
+// Icon chips alternate blue/orange down the list — same two brand colors
 // as the Hero's dual ambient glow, just in a light, professional register
 // instead of the Hero's dark glass treatment.
 const accents = [
-  {
-    chip: "bg-blue-50 text-blue-700",
-    border: "group-hover:border-blue-200",
-  },
-  {
-    chip: "bg-orange-50 text-orange-600",
-    border: "group-hover:border-orange-200",
-  },
+  { chip: "bg-blue-50 text-blue-700" },
+  { chip: "bg-orange-50 text-orange-600" },
 ]
 
 export default function ServicesSection() {
@@ -79,37 +73,39 @@ export default function ServicesSection() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
-          label="Our Services"
           title="Specialist ERP & Accounting Solutions"
           description="We provide implementation, support, and consulting services that help businesses improve operational control, streamline financial processes, and maintain reliable ERP environments."
         />
 
-        <div className="mt-14 grid gap-6 sm:mt-16 sm:gap-7 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-14 divide-y divide-slate-200 border-y border-slate-200 sm:mt-16">
           {services.map((service, index) => {
             const accent = accents[index % accents.length]
 
             return (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl sm:p-8 ${accent.border}`}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="group grid grid-cols-1 items-start gap-4 py-8 sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-8 sm:py-10"
               >
                 <div
-                  className={`flex h-12 w-12 items-center justify-center rounded-xl transition-colors ${accent.chip}`}
+                  className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors ${accent.chip}`}
                 >
                   <service.icon className="h-6 w-6" />
                 </div>
 
-                <h3 className="mt-8 text-xl font-semibold text-slate-900 sm:text-2xl">
-                  {service.title}
-                </h3>
+                <div className="min-w-0">
+                  <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 leading-7 text-slate-600">
+                    {service.description}
+                  </p>
+                </div>
 
-                <p className="mt-4 flex-grow leading-7 text-slate-600 sm:mt-5">
-                  {service.description}
-                </p>
+                <ArrowRight className="hidden h-5 w-5 shrink-0 text-slate-300 transition group-hover:translate-x-1 group-hover:text-slate-900 sm:block" />
               </motion.div>
             )
           })}

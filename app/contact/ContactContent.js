@@ -57,11 +57,7 @@ export default function ContactContent() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto max-w-4xl px-6 text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-            Contact Kilapunch
-          </p>
-
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Let&apos;s Talk About Your Business Systems
           </h1>
 
@@ -217,11 +213,7 @@ export default function ContactContent() {
               transition={{ duration: 0.6 }}
               className="min-w-0"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-                Why Contact Kilapunch
-              </p>
-
-              <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">
                 Speak With An ERP Consultant Regarding:
               </h2>
 

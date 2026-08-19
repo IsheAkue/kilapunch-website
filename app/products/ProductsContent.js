@@ -82,11 +82,7 @@ export default function ProductsContent() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto max-w-4xl px-6 text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-400">
-            Software Products
-          </p>
-
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Five Platforms. One Certified Implementation Partner.
           </h1>
 
@@ -203,16 +199,6 @@ export default function ProductsContent() {
         <div className="pointer-events-none absolute -right-24 top-0 h-[340px] w-[340px] rounded-full bg-orange-100/40 blur-3xl" />
 
         <div className="relative mx-auto max-w-6xl px-6 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500"
-          >
-            Why Kilapunch
-          </motion.p>
-
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
