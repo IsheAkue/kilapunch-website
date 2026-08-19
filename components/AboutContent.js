@@ -114,7 +114,7 @@ export default function AboutContent() {
   return (
     <div className="bg-white">
       {/* ============================= HERO ============================= */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-brand-navy py-20 sm:py-28">
         <div className="pointer-events-none absolute -left-24 top-0 h-[420px] w-[420px] rounded-full bg-blue-700/25 blur-[120px]" />
         <div className="pointer-events-none absolute -right-24 bottom-0 h-[380px] w-[380px] rounded-full bg-orange-600/20 blur-[120px]" />
         <div
@@ -288,7 +288,7 @@ export default function AboutContent() {
       </section>
 
       {/* =================== MISSION / VISION — STATEMENT BAND =================== */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-brand-navy py-20 lg:py-28">
         <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-blue-700/15 blur-[120px]" />
 
         <div className="relative mx-auto grid max-w-6xl grid-cols-1 divide-y divide-white/10 px-6 lg:grid-cols-2 lg:divide-x lg:divide-y-0">
@@ -391,7 +391,7 @@ export default function AboutContent() {
       </section>
 
       {/* ============================= CTA ============================= */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-20 text-center text-white lg:py-24">
+      <section className="relative overflow-hidden bg-brand-navy py-20 text-center text-white lg:py-24">
         <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-blue-700/20 blur-[120px]" />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -419,7 +419,7 @@ export default function AboutContent() {
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-gradient px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
             >
               Request Consultation
               <ArrowRight className="h-4 w-4" />

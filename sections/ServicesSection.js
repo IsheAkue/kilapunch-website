@@ -118,7 +118,7 @@ export default function ServicesSection() {
         <div className="mt-14 text-center">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30"
+            className="inline-flex items-center gap-2 rounded-full bg-brand-gradient px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30"
           >
             Explore All Services
             <ArrowRight className="h-4 w-4" />

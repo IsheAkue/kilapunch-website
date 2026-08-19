@@ -26,7 +26,7 @@ const accents = ["text-blue-400", "text-orange-400"]
 
 export default function MetricsSection() {
   return (
-    <section className="relative overflow-hidden bg-[#0B0F17] py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-brand-navy py-20 lg:py-24">
       {/* Ambient glow — identical treatment to the Hero */}
       <div className="pointer-events-none absolute -left-24 top-0 h-[420px] w-[420px] rounded-full bg-blue-700/20 blur-[120px]" />
       <div className="pointer-events-none absolute -right-24 bottom-0 h-[380px] w-[380px] rounded-full bg-orange-600/15 blur-[120px]" />

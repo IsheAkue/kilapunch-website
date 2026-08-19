@@ -10,6 +10,20 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand — the dark navy used across every hero/CTA section, and the
+     blue->orange gradient used on every primary call-to-action. Named here
+     once so a rebrand is a one-line change instead of a repo-wide find and
+     replace across ~15 files. */
+  --color-brand-navy: #0b0f17;
+}
+
+@utility bg-brand-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue-600),
+    var(--color-orange-500)
+  );
 }
 
 body {

@@ -234,7 +234,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar — same exact dark brand color as the rest of the site */}
-      <div className="border-t border-white/10 bg-[#0B0F17] text-white">
+      <div className="border-t border-white/10 bg-brand-navy text-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between lg:px-8">
           <div className="flex items-center gap-3">
             <Shield className="h-5 w-5 shrink-0 text-orange-400" />

@@ -72,7 +72,7 @@ export default function ProductsContent() {
   return (
     <main className="min-h-screen bg-white">
       {/* ============================= HERO ============================= */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-brand-navy py-20 sm:py-28">
         <div className="pointer-events-none absolute -left-24 top-0 h-[420px] w-[420px] rounded-full bg-blue-700/25 blur-[120px]" />
         <div className="pointer-events-none absolute -right-24 bottom-0 h-[380px] w-[380px] rounded-full bg-orange-600/20 blur-[120px]" />
         <div
@@ -126,7 +126,7 @@ export default function ProductsContent() {
                   className="group flex flex-col items-center gap-2"
                 >
                   <span
-                    className={`flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-offset-2 ring-offset-[#0B0F17] transition group-hover:scale-110 ${
+                    className={`flex h-16 w-16 items-center justify-center rounded-full ring-2 ring-offset-2 ring-offset-brand-navy transition group-hover:scale-110 ${
                       index % 2 === 0
                         ? "bg-blue-600/10 text-blue-400 ring-blue-500"
                         : "bg-orange-600/10 text-orange-400 ring-orange-500"
@@ -262,7 +262,7 @@ export default function ProductsContent() {
       </section>
 
       {/* ============================= CTA ============================= */}
-      <section className="relative overflow-hidden bg-[#0B0F17] py-20 text-center text-white lg:py-24">
+      <section className="relative overflow-hidden bg-brand-navy py-20 text-center text-white lg:py-24">
         <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-blue-700/20 blur-[120px]" />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -292,7 +292,7 @@ export default function ProductsContent() {
               href="https://wa.me/263786049770"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-gradient px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
             >
               <MessageCircle className="h-4 w-4" />
               Book Consultation

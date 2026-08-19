@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   if (!product) return {}
 
   return {
-    title: `${product.name} | Kilapunch ERP Solutions`,
+    title: product.name,
     description: product.shortDescription,
   }
 }
@@ -32,7 +32,26 @@ export default async function ProductPage({ params }) {
     .filter((item) => item.slug !== slug)
     .slice(0, 3)
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: product.name,
+    description: product.shortDescription,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Kilapunch ERP Solutions",
+      url: "https://kilapuncherp.co.zw",
+    },
+    areaServed: "ZW",
+  }
+
   return (
-    <ProductDetailContent product={product} relatedProducts={relatedProducts} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <ProductDetailContent product={product} relatedProducts={relatedProducts} />
+    </>
   )
 }

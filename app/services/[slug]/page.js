@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   if (!service) return {}
 
   return {
-    title: `${service.title} | Kilapunch ERP Solutions`,
+    title: service.title,
     description: service.shortDescription,
   }
 }
@@ -32,7 +32,26 @@ export default async function ServicePage({ params }) {
     .filter((item) => item.slug !== slug)
     .slice(0, 3)
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.shortDescription,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Kilapunch ERP Solutions",
+      url: "https://kilapuncherp.co.zw",
+    },
+    areaServed: "ZW",
+  }
+
   return (
-    <ServiceDetailContent service={service} relatedServices={relatedServices} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <ServiceDetailContent service={service} relatedServices={relatedServices} />
+    </>
   )
 }

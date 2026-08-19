@@ -142,7 +142,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-orange-500 px-8 py-4 font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30 disabled:cursor-not-allowed disabled:opacity-70"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-gradient px-8 py-4 font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30 disabled:cursor-not-allowed disabled:opacity-70"
       >
         {state.submitting ? "Sending..." : "Send Inquiry"}
         {!state.submitting && <Send className="h-4 w-4" />}

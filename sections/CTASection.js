@@ -52,7 +52,7 @@ export default function CTASection() {
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
           <button
             onClick={openWhatsApp}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30 sm:w-auto"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-gradient px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:shadow-blue-900/30 sm:w-auto"
           >
             Request Consultation
             <ArrowRight className="h-4 w-4" />

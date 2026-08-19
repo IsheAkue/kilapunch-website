@@ -1,8 +1,35 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { MotionConfig } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+// Every fact here already appears on the live site (Footer, Contact page) —
+// this just makes it machine-readable for search engines, nothing new is
+// being claimed.
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Kilapunch ERP Solutions",
+  url: "https://kilapuncherp.co.zw",
+  logo: "https://kilapuncherp.co.zw/images/Logo.png",
+  image: "https://kilapuncherp.co.zw/images/Logo.png",
+  email: "kilapunch.erpsolutions@gmail.com",
+  telephone: "+263774708347",
+  foundingDate: "2006",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Suite 206, Rothbaths Mansions, Sixth Street",
+    addressLocality: "Gweru",
+    addressCountry: "ZW",
+  },
+  areaServed: "ZW",
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61590132686807",
+    "https://www.linkedin.com/in/kilapunch-erp-solutions-287175185",
+  ],
+};
 
 
 const geistSans = Geist({
@@ -102,7 +129,12 @@ className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
 
 <body className="min-h-full flex flex-col">
 
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+/>
 
+<MotionConfig reducedMotion="user">
 <Navbar />
 
 
@@ -112,7 +144,7 @@ className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
 
 
 <Footer />
-
+</MotionConfig>
 
 </body>
 

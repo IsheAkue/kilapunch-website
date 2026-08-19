@@ -4,7 +4,7 @@ import IndustriesClient from "./IndustriesClient"
 export const metadata = {
 
 title:
-"Industries We Serve | Kilapunch ERP Solutions",
+"Industries We Serve",
 
 description:
 "Kilapunch provides ERP and accounting solutions for retail, manufacturing, distribution, wholesale and growing businesses.",

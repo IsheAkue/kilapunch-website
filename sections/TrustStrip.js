@@ -16,10 +16,10 @@ export default function TrustStrip() {
   const marqueeItems = [...items, ...items]
 
   return (
-    <section className="relative overflow-hidden border-y border-white/10 bg-[#0B0F17] py-8">
+    <section className="relative overflow-hidden border-y border-white/10 bg-brand-navy py-8">
       {/* Edge fades so items scroll in/out smoothly instead of hard-cutting */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-[#0B0F17] to-transparent sm:w-32" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-[#0B0F17] to-transparent sm:w-32" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-brand-navy to-transparent sm:w-32" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-brand-navy to-transparent sm:w-32" />
 
       <div className="marquee-track flex w-max gap-4">
         {marqueeItems.map((item, index) => (

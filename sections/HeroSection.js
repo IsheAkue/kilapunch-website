@@ -142,7 +142,7 @@ function ProductTabs({ activeId, onChange }) {
             {isActive && (
               <motion.span
                 layoutId="active-product-pill"
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 shadow-lg shadow-blue-900/30"
+                className="absolute inset-0 rounded-full bg-brand-gradient shadow-lg shadow-blue-900/30"
                 transition={{ type: "spring", stiffness: 400, damping: 32 }}
               />
             )}
@@ -328,7 +328,7 @@ export default function HeroSection() {
   const activeProduct = products.find((p) => p.id === activeId) ?? products[0]
 
   return (
-    <section className="relative overflow-hidden bg-[#0B0F17] py-16 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-brand-navy py-16 sm:py-20 lg:py-28">
       {/* Background: layered glow + faint dot grid */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-0 h-[520px] w-[520px] rounded-full bg-blue-700/25 blur-[120px]" />
@@ -377,7 +377,7 @@ export default function HeroSection() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
                 href={activeProduct.href}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-gradient px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 sm:w-auto"
               >
                 Explore {activeProduct.name}
                 <ArrowRight className="h-4 w-4" />

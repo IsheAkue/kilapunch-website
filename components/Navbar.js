@@ -29,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0B0F17]/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-brand-navy/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 sm:h-20 lg:px-8">
 
         {/* Logo */}
@@ -78,7 +78,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="absolute left-0 top-full w-full border-b border-white/10 bg-[#0B0F17]/95 backdrop-blur-xl lg:hidden"
+              className="absolute left-0 top-full w-full border-b border-white/10 bg-brand-navy/95 backdrop-blur-xl lg:hidden"
             >
               <div className="space-y-1 px-6 py-6">
 
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-orange-500 px-5 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-gradient px-5 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-900/30"
                 >
                   Request Support
                   <ArrowRight className="h-4 w-4" />
@@ -123,7 +123,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 lg:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-brand-gradient px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/30 transition hover:-translate-y-0.5 hover:shadow-blue-900/50 lg:inline-flex"
           >
             Request Support
             <ArrowRight className="h-4 w-4" />
