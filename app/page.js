@@ -1,5 +1,6 @@
 import HeroSection from "@/sections/HeroSection"
 import TrustStrip from "@/sections/TrustStrip"
+import ClientsStrip from "@/sections/ClientsStrip"
 import ServicesSection from "@/sections/ServicesSection"
 import WhyChooseUs from "@/sections/WhyChooseUs"
 import ProcessSection from "@/sections/ProcessSection"
@@ -13,6 +14,7 @@ export default function KilapunchHomepage() {
     <main className="min-h-screen bg-white text-slate-900">
       <HeroSection />
       <TrustStrip />
+      <ClientsStrip />
       <ServicesSection />
       <IndustriesSection />
       <ProcessSection />

@@ -1,25 +1,18 @@
 export const dynamic = 'force-static';
 
 import { services } from "@/data/services"
-
-const products = [
-  "sage-200-evolution",
-  "sage-intacct",
-  "sage-payroll",
-  "sage-50-pastel",
-  "palladium-accounting",
-]
+import { products } from "@/data/products"
 
 export default function sitemap() {
   const baseUrl = "https://kilapuncherp.co.zw"
 
   const staticPages = [
     "",
+    "/about",
     "/services",
     "/products",
     "/industries",
     "/contact",
-    "/team",
   ].map((page) => ({
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
@@ -31,7 +24,7 @@ export default function sitemap() {
   }))
 
   const productPages = products.map((product) => ({
-    url: `${baseUrl}/products/${product}`,
+    url: `${baseUrl}/products/${product.slug}`,
     lastModified: new Date(),
   }))
 

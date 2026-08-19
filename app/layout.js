@@ -18,6 +18,8 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
+  metadataBase: new URL("https://kilapuncherp.co.zw"),
+
   title: {
     default: "Kilapunch ERP Solutions | Sage ERP Consultants Zimbabwe",
     template: "%s | Kilapunch ERP Solutions",
